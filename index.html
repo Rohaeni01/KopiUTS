@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Petani Kopi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Aplikasi Data Petani Kopi</h1>
+  </header>
+
+  <main>
+    <section id="form-petani">
+      <h2>Tambah Data Petani</h2>
+      <form id="formPetani" action="simpan.php" method="POST">
+        <label for="nama">Nama</label>
+        <input type="text" id="nama" name="nama">
+
+        <label for="alamat">Alamat</label>
+        <input type="text" id="alamat" name="alamat">
+
+        <label for="no_hp">No HP</label>
+        <input type="text" id="no_hp" name="no_hp">
+
+        <label for="luas">Luas Lahan (ha)</label>
+        <input type="number" step="0.01" id="luas" name="luas_lahan">
+
+        <button type="submit" class="tombol">Simpan</button>
+      </form>
+    </section>
+
+    <section id="daftar-petani">
+      <h2>Daftar Petani</h2>
+      <div id="hasil"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
